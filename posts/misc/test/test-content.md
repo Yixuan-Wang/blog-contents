@@ -38,7 +38,7 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 [Line Breaks](#lines)
 [TeX](#tex)
 
-<a name="headers"/>
+<a name="headers"></a>
 
 ## Headers
 
@@ -74,7 +74,7 @@ Alt-H1
 Alt-H2
 ------
 
-<a name="emphasis"/>
+<a name="emphasis"></a>
 
 ## Emphasis
 
@@ -97,7 +97,7 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 
-<a name="lists"/>
+<a name="lists"></a>
 
 ## Lists
 
@@ -133,7 +133,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Or minuses
 + Or pluses
 
-<a name="links"/>
+<a name="links"></a>
 
 ## Links
 
@@ -178,7 +178,7 @@ Some text to show that the reference links can follow later.
 [link text itself]: http://www.reddit.com
 
 
-<a name="code"/>
+<a name="code"></a>
 
 ## Code and Syntax Highlighting
 
@@ -236,7 +236,7 @@ But let's throw in a <b>tag</b>.
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
-<a name="tables"/>
+<a name="tables"></a>
 
 ## Tables
 
@@ -274,7 +274,7 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | *Still*  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
-<a name="blockquotes"/>
+<a name="blockquotes"></a>
 
 ## Blockquotes
 
@@ -294,7 +294,7 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
 
-<a name="html"/>
+<a name="html"></a>
 
 ## Inline HTML
 
@@ -318,7 +318,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-<a name="hr"/>
+<a name="hr"></a>
 
 ## Horizontal Rule
 
@@ -352,7 +352,7 @@ ___
 
 Underscores
 
-<a name="lines"/>
+<a name="lines"></a>
 
 ## Line Breaks
 
@@ -379,7 +379,7 @@ This line is only separated by a single newline, so it's a separate line in the 
 (Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
 
-<a name="tex"/>
+<a name="tex"></a>
 
 ## TeX
 
@@ -401,6 +401,6 @@ $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$
 
-We have $\href{https://katex.org/}{\KaTeX}$ for maths!
+We have KaTeX for maths!
 
 **Note:** Use the online reference of [Supported TeX Functions](https://katex.org/docs/supported.html)
