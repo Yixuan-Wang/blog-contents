@@ -10,15 +10,15 @@ jobs:
 
     steps:
       - name: Dispatch Contents Update Event
-        if: ${{ !startsWith(${{ github.event.commit.message }}, "!") }}
+        if: ${{ !startsWith(github.event.commit.message, '!') }}
         uses: peter-evans/repository-dispatch@v1
         with:
           repository: Yixuan-Wang/blog
           token: ${{ secrets.ACCESS_TOKEN }}
           event-type: contents-update
           client-payload: |
-            '{
+            {
               "message": "${{ github.event.commit.message }}",
               "committerName": "${{ github.event.commit.committer.name }}",
-              "committerEmail": "${{ github.event.commit.committer.email }}",
-            }'
+              "committerEmail": "${{ github.event.commit.committer.email }}"
+            }
