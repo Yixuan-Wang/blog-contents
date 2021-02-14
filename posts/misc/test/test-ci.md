@@ -12,4 +12,4 @@ keywords:
 
 <!-- more -->
 
-Lorem ipsum.
+Lorem ipsum dolor.
