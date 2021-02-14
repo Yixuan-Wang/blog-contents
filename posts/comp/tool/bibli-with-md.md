@@ -11,7 +11,7 @@ keywords:
 
 借助 Pandoc，在 Markdown 中引用参考文献非常方便。
 
-<!--more-->
+<!-- more -->
 
 ## 为什么不用 DOCX
 

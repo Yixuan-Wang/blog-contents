@@ -9,7 +9,9 @@ tags:
 
 JavaScript 相关工具的速查表。
 
-<!--more-->
+<!-- more -->
+
+<a name="http-server" />
 
 ## http-server
 

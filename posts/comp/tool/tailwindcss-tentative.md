@@ -8,6 +8,9 @@ keywords:
   - CSS
 ---
 
+Tailwind CSS 从真香到放弃的个人经历。
+<!-- more -->
+
 ## Tailwind CSS 简介
 
 [Tailwind CSS](https://tailwindcss.com/) 是一个 CSS 框架，通过类名实现近似内联样式（inline style）但更方便快捷的网页样式编写体验。一段示例代码：

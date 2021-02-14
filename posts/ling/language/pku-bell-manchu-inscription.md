@@ -11,7 +11,7 @@ keywords:
 
 北大钟亭里的那口钟是清朝的遗物，在北侧刻有满文铭文。
 
-<!--more-->
+<!-- more -->
 
 <style>
 .manchu {

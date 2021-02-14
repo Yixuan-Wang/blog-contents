@@ -9,7 +9,7 @@ tags:
 
 学习层叠样式表时的玩耍：竖排《千字文》。
 
-<!--more-->
+<!-- more -->
 
 <h2 id="vert"></h2>
 <div style="writing-mode:vertical-rl; width: 100%; overflow-x:auto; margin-top: 50px margin-right:100px;font-family:serif;font-weight:500">

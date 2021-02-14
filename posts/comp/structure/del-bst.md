@@ -11,7 +11,7 @@ math: true
 
 二叉搜索树删除结点的操作实际上是一种旋转。
 
-<!--more-->
+<!-- more -->
 
   <div style="text-align:center;">
   <strong><del>生活在二叉树上</del></strong> <br/>
