@@ -12,7 +12,7 @@ Pandoc 是一个文本格式转换工具。
 
 <!-- more -->
 
-<a name="链接" />
+<a name="链接" ></a>
 
 ## 链接
 
@@ -20,7 +20,7 @@ Pandoc 是一个文本格式转换工具。
 [基础指南](https://pandoc.org/getting-started.html)，面对不会命令行的人士  
 [用户手册](https://pandoc.org/MANUAL.html)
 
-<a name="支持的格式" />
+<a name="支持的格式"></a>
 
 ## 支持的格式
 
@@ -44,7 +44,7 @@ Pandoc 是一个文本格式转换工具。
 
 以上格式仅支持导出。
 
-<a name="基本用法" />
+<a name="基本用法"></a>
 
 ## 基本用法
 
@@ -71,7 +71,7 @@ pandoc test.md --bibliography my.bib --csl china-national-standard-gb-t-7714-201
 ```
 -->
 
-<a name="参考文献" />
+<a name="参考文献"></a>
 
 ## 参考文献
 
