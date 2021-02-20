@@ -11,8 +11,6 @@ JavaScript 相关工具的速查表。
 
 <!-- more -->
 
-<a name="http-server"></a>
-
 ## http-server
 
 http-server 顾名思义是一个 HTTP 服务器工具，用于在本地进行调试。

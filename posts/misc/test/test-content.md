@@ -25,20 +25,18 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 
 ##### Table of Contents
 
-[Headers](#headers)
-[Emphasis](#emphasis)
-[Lists](#lists)
-[Links](#links)
-[Images](#images)
-[Code and Syntax Highlighting](#code)
-[Tables](#tables)
-[Blockquotes](#blockquotes)
-[Inline HTML](#html)
-[Horizontal Rule](#hr)
-[Line Breaks](#lines)
-[TeX](#tex)
-
-<a name="headers"></a>
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+[Lists](#lists)  
+[Links](#links)  
+[Images](#images)  
+[Code and Syntax Highlighting](#code)  
+[Tables](#tables)  
+[Blockquotes](#blockquotes)  
+[Inline HTML](#html)  
+[Horizontal Rule](#hr)  
+[Line Breaks](#lines)  
+[TeX](#tex)  
 
 ## Headers
 
@@ -74,8 +72,6 @@ Alt-H1
 Alt-H2
 ------
 
-<a name="emphasis"></a>
-
 ## Emphasis
 
 ```no-highlight
@@ -96,8 +92,6 @@ Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
 
-
-<a name="lists"></a>
 
 ## Lists
 
@@ -132,8 +126,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
-
-<a name="links"></a>
 
 ## Links
 
@@ -177,8 +169,6 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-
-<a name="code"></a>
 
 ## Code and Syntax Highlighting
 
@@ -236,8 +226,6 @@ But let's throw in a <b>tag</b>.
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
-<a name="tables"></a>
-
 ## Tables
 
 Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
@@ -274,8 +262,6 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | *Still*  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
-<a name="blockquotes"></a>
-
 ## Blockquotes
 
 ```no-highlight
@@ -293,8 +279,6 @@ Quote break.
 Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
-
-<a name="html"></a>
 
 ## Inline HTML
 
@@ -317,8 +301,6 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
-
-<a name="hr"></a>
 
 ## Horizontal Rule
 
@@ -352,8 +334,6 @@ ___
 
 Underscores
 
-<a name="lines"></a>
-
 ## Line Breaks
 
 My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
@@ -378,8 +358,6 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 (Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
-
-<a name="tex"></a>
 
 ## TeX
 
