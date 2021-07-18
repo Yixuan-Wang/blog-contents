@@ -1,7 +1,7 @@
 ---
 title: 人类语言的共性
 date: 2020-09-30T14:22:00+08:00
-category: 语言学
+category: 语言
 tags:
   - 理论语言学
 keywords:

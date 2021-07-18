@@ -1,7 +1,7 @@
 ---
 title: 北大钟亭的满文铭文
 date: 2020-10-12
-category: 语言学
+category: 语言
 tags:
   - 语言
 keywords:

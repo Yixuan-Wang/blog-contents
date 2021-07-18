@@ -1,7 +1,7 @@
 ---
 title: 汉语方言的鼻音韵尾数量
 date: 2020-07-16T11:48:00+08:00
-category: 语言学
+category: 语言
 tags:
   - 语音
   - 方言

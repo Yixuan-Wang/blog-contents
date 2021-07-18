@@ -1,7 +1,7 @@
 ---
 title: 在 Markdown 中引用参考文献
 date: 2020-12-30T23:05:00+08:00
-category: 信息学
+category: 信息
 tags:
   - 工具
 keywords:

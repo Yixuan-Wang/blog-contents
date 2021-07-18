@@ -1,7 +1,7 @@
 ---
 title: 'Git 速查表'
 date: 2020-07-09T22:01:19+08:00
-category: 信息学
+category: 信息
 tags:
   - 工具
 keywords:

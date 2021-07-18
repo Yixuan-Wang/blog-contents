@@ -1,7 +1,7 @@
 ---
 title: 二叉搜索树的删除结点操作
 date: 2020-09-18T10:48:00+08:00
-category: 信息学
+category: 信息
 tags:
   - 数据结构
 keywords:

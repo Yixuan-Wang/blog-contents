@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript 相关工具速查表'
 date: 2020-08-24T17:13:00+08:00
-category: 信息学
+category: 信息
 tags:
   - JavaScript
   - 工具

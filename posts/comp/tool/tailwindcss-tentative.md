@@ -1,7 +1,7 @@
 ---
 title: Tailwind CSS 初探
 date: 2021-02-04
-category: 信息学
+category: 信息
 tags:
   - 工具
 keywords:

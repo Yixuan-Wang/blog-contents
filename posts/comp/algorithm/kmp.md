@@ -1,7 +1,7 @@
 ---
 title: KMP 算法
 date: 2020-06-11T21:39:02+08:00
-category: 信息学
+category: 信息
 tags:
   - 算法
 keywords:
