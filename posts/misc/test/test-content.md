@@ -40,7 +40,7 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 
 ## Headers
 
-```no-highlight
+```
 # H1
 ## H2
 ### H3
@@ -74,7 +74,7 @@ Alt-H2
 
 ## Emphasis
 
-```no-highlight
+```
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
@@ -95,7 +95,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists
 
-```no-highlight
+```
 1. First ordered list item
 2. Another item
   * Unordered sub-list.
@@ -131,7 +131,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 There are two ways to create links.
 
-```no-highlight
+```
 [I'm an inline-style link](https://www.google.com)
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
@@ -174,7 +174,7 @@ Some text to show that the reference links can follow later.
 
 Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
-```no-highlight
+```
 Inline `code` has `back-ticks around` it.
 ```
 
@@ -182,7 +182,7 @@ Inline `code` has `back-ticks around` it.
 
 Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
-<pre lang="no-highlight"><code>```javascript
+<pre lang=""><code>```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -230,7 +230,7 @@ Again, to see what languages are available for highlighting, and how to write th
 
 Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
 
-```no-highlight
+```
 Colons can be used to align columns.
 
 | Tables        | Are           | Cool  |
@@ -264,7 +264,7 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 
 ## Blockquotes
 
-```no-highlight
+```
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
 
@@ -284,7 +284,7 @@ Quote break.
 
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
-```no-highlight
+```
 <dl>
   <dt>Definition list</dt>
   <dd>Is something people use sometimes.</dd>
@@ -361,7 +361,7 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 ## TeX
 
-```no-highlight
+```
 Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$
 
 Block math:
