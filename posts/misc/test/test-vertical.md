@@ -12,8 +12,8 @@ tags:
 <!-- more -->
 
 <h2 id="vert"></h2>
-<div style="writing-mode:vertical-rl; width: 100%; overflow-x:auto; margin-top: 50px margin-right:100px;font-family:serif;font-weight:500">
-<h1 style="margin-top:0em;padding-top:0em">千字文</h1>
+<div style="writing-mode:vertical-rl; width: 100%; overflow-x:auto; margin-top: 50px margin-right:100px;font-family:var(--font-serif);font-weight:500">
+<h1 style="margin-top:0em;padding-top:0em;padding-left:0.25rem;">千字文</h1>
 <p>
 天地玄黃　宇宙洪荒　日月盈昃　辰宿列張　</p><p>
 寒來暑往　秋收冬藏　閏餘成歲　律召調陽　</p><p>
