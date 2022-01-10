@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
-import { syncRef } from '@vueuse/core'
-import { pageTitle } from '~/logic/title'
+import { useHead } from '@vueuse/head'
 const about = import.meta.globEager('./about/*.md')
 
 const { t, locale } = useI18n()
 const aboutComponent = computed(() => about[`./about/about-${locale.value}.md`].default)
 
 const pageName = computed(() => t('about'))
-syncRef(pageName, pageTitle)
+
+useHead({ title: computed(() => `${pageName.value} | Pak`) })
 </script>
 
 <template>
