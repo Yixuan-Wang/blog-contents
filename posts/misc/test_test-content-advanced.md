@@ -97,9 +97,6 @@ Custom values are **fine**{.px-1 .bg-[#114514] .text-white}.
 
 有一些内容。
 :::
-
-甚至段落上也可以。
-{ .p-2 .bg-red-500 }
 ```
 
 ::: ~ { .bg-acc .text-bgd .!mt-2 }
@@ -107,9 +104,6 @@ Custom values are **fine**{.px-1 .bg-[#114514] .text-white}.
 
 有一些内容。
 :::
-
-甚至段落上也可以。
-{ .p-2 .bg-red-500 }
 
 :::::::
 
