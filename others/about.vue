@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-import { computed } from 'vue'
-import { useHead } from '@vueuse/head'
+// @ts-nocheck
 const about = import.meta.globEager('./about/*.md')
 
 const { t, locale } = useI18n()
