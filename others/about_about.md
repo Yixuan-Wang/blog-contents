@@ -1,3 +1,14 @@
+---
+title: 关于
+date: 2022-07-05
+category: misc
+tags: []
+---
+
+This is a blоg, not a blοg.
+
+<!-- more -->
+
 ## 命名
 
 “**博**”字，中古汉语声母“幫”，韵母“鐸開”，拟音 [pɑk]。其中后低不圆唇元音 ɑ (U+0251 <span style="font-variant: all-small-caps;">LATIN SMALL LETTER ALPHA</span>) 字体支持较差，因此转写作 pak。
