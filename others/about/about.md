@@ -1,10 +1,3 @@
----
-title: 关于
-date: 2022-07-05
-category: misc
-tags: []
----
-
 This is a blоg, not a blοg.
 
 <!-- more -->
