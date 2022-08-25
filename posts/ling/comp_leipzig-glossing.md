@@ -16,7 +16,7 @@ novue: true
 <style>
 #md .leipzig {
   margin: 1em 0;
-  border: 4px solid var(--color-accent);
+  border: 4px solid rgba(var(--color-accent));
   border-radius: 8px;
   padding: 0.75em;
   display: flex;
