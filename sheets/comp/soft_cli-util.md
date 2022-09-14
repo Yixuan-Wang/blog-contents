@@ -20,7 +20,7 @@ Also note that this article **DOES NOT** intend to deliberately stress the fact 
 
 ## Zsh
 
-[`zsh` <img src="https://www.zsh.org/color_vertical_icon.png" alt="zsh" style="display: inline; height: 1em; vertical-align: sub;">](http://www.zsh.org/) is quite a powerful and configurable yet old-schooled shell(comparing to fancy ~~REAL *GEN-Z*~~ stuff like [`warp`](https://www.warp.dev/) or [`nushell`](https://www.nushell.sh/)). Traditionally you would want to install the famous ~~bloatware~~ [`oh-my-zsh`](https://ohmyz.sh/) as a drop-in configuration framework.
+[`zsh` <img src="https://www.zsh.org/color_vertical_icon.png" alt="zsh" style="display: inline; height: 1em; vertical-align: sub;">](http://www.zsh.org/) is quite a powerful and configurable yet old-schooled shell(comparing to fancy ~~REAL *GEN-Z*~~ stuff like [`warp`](https://www.warp.dev/) or [`nushell`](https://www.nushell.sh/)). Traditionally you would want to install the famous ~~bloatware~~ [`oh-my-zsh`](https://ohmyz.sh/) as a drop-in configuration framework. ~~Wait a minute, this is a shell, not a CLI🤪.~~
 
 ```shell
 # Install `oh-my-zsh`
@@ -138,6 +138,13 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 :::
 
 `fd` doesn't come with a install script, so you have to grab them by hand from [the release page](https://github.com/sharkdp/fd/releases). Because of name clash, it is called `fdfind` on `apt` repo.
+
+Refer to [this page](https://github.com/sharkdp/fd#how-to-use) for documentation. If you want to use `fd` to boost your `fzf` search experience, stuff these env vars into your `.zshrc` or so.
+
+```shell
+export FZF_DEFAULT_COMMAND='fd --type file'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+```
 
 ## Ripgrep
 
