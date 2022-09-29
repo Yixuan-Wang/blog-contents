@@ -12,6 +12,8 @@ keywords:
 
 <!-- more -->
 
+**更新 2022/09/30**：修正了“闪音”术语，以及增补了词重音区别意义问题的讨论。感谢 xjr 老师！
+
 ## /l/
 
 德语的 /l/ 音位（在标准高地德语里，下同）通常只有一种表层实现：[ l̺ ]。首先，德语**没有软腭化**（velarized）变体 [lˠ]，也就是英语的 _fee**l**_, _ro**ll**_ 中的“dark L”，即使在音节尾舌根也不会抵近软腭。其次，德语的 /l/ 倾向于**舌尖的**（apical），但舌尖不一定像汉语普通话一样直接触及牙齿（舌尖 - 齿龈，apical-alveolar，而汉语是舌尖 - 齿，apical-dental）。Ladefoged 在 _The Sounds of the World's Languages_(1996) 比较了德语和汉语普通话的 /l/ 的 X 光照片，汉语的 /l/ 舌尖还要再前伸一些。
@@ -19,7 +21,7 @@ keywords:
 
 ## /ʁ/
 
-德语的 /ʁ/ 音位通常被描述为”小舌音“，也就是**小舌浊颤音**（voiced uvular trill）[ʀ]。在元音中间，它也可能实现为只颤一次的**拍音**（flat） [ʀ̆]。Ladefoged 指出，在比较保守的发音里颤音会保留，而通常发音人只会使用小舌浊擦音（voiced uvular fricative） [ʁ] 甚至小舌浊近音（voiced uvular approximant） [ʁ̞]。
+德语的 /ʁ/ 音位通常被描述为”小舌音“，也就是**小舌浊颤音**（voiced uvular trill）[ʀ]。在元音中间，它也可能实现为只颤一次的**闪音**（flap） [ʀ̆]。Ladefoged 指出，在比较保守的发音里颤音会保留，而通常发音人只会使用小舌浊擦音（voiced uvular fricative） [ʁ] 甚至小舌浊近音（voiced uvular approximant） [ʁ̞]。
 
 ~~才想起来德语 /ʁ/ 的分析是 B. Hayes _Introductory Phonology_(2009) 的第 13 章课后习题 3，大失败。有人音系学忘干净了，我不说是谁🤪。~~
 
@@ -75,10 +77,12 @@ Mangold(2005) 指出德语的清塞擦音 /pf//ts//tʃ/ 总是**不送气**的�
 
 ## 词重音
 
-~~重音是最难的~~。德语的重音似乎是**自由**的，也就是重音所在的位置不会有区别意义的功效。有说法指，德语的重音通常是落在**最后三个音节**之一，最常见的是倒数第二个音节，但也可能被吸引到词尾或倒数第二个的重音节（strong syllable，辅音结尾或是包含一个长音的音节）上，比如 _Krokodil_[kʁokoˈdiːl]（前两个都是轻音节，吸引到词尾的重音节）、_Monitor_[ˈmoːnitoːɐ̯]（吸引到倒数第二个重音节）。
+~~重音是最难的~~。德语的重音似乎是比较**自由**的，也就是重音所在的位置*一般*情况下是可预测的，不会有区别意义的功效。不过和英语（比如 _accent_ 和 _address_）一样，并非完全没有区别意义的例子，比如 _blutarm_ 有 [ˈbluːt.aɐ̯m]“贫血”和 [ˌbluːt.ˈaɐ̯m]“赤贫”这样的对子。一种可能的解释是，名词 _Blut_ 和前缀 _blut_ 在构词时，前者“自带”重音而后者并不？又是一些 morphophonology 的问题了。既然涉及到 morphophonology，和日语等在 lexical 层面的重音（橋[hà.ɕí] 箸[há.ɕì]，一个不再可分的“语素”内的两个音节的重音模式是区别意义的，没有 morphological 的过程）是很不相同的。
+
+有说法指，德语的重音通常是落在**最后三个音节**之一，最常见的是倒数第二个音节，但也可能被吸引到词尾或倒数第二个的重音节（strong syllable，辅音结尾或是包含一个长音的音节）上，比如 _Krokodil_[kʁokoˈdiːl]（前两个都是轻音节，吸引到词尾的重音节）、_Monitor_[ˈmoːnitoːɐ̯]（吸引到倒数第二个重音节）。
 
 ## 参考资料
 
 ~~Wikipedia 路边社~~：[Standard German phonology - Wikipedia](https://en.wikipedia.org/wiki/Standard_German_phonology)
 
-B. Hayes _Introductory Phonology_(2009) 相当不错，值得看看🥰。顺便感谢老师和几位 PRO 对我灌水的帮助☺️。
+B. Hayes _Introductory Phonology_(2009) 相当不错，值得看看🥰。顺便感谢老师和几位 PRO 对我灌水的帮助以及指正☺️。德语有趣的音系现象应该还有不少（尤其是德语比较丰富的 morphophonology 过程，据说还有 gemination 相关的问题？但是我不会），如果以后有机会碰到了再另开坑谈谈好了。
