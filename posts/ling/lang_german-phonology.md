@@ -4,6 +4,7 @@ date: 2022-09-25T00:10:00+08:00
 category: ling
 tags:
   - language
+  - phonology
 keywords:
   - lang:deu
 ---
