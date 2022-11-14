@@ -27,7 +27,7 @@ Obviously, the name of the series is taken from the famous Chomsky [quote](https
 
 My basic stance is clear, and I don't expect I will ever change my mind.
 
-Linguistics is the science of human languages. If it *IS* not, then it *SHOULD HAVE BEEN*, and it *SHALL BE*.
+> Linguistics is the science of human languages. If it *IS* not, then it *SHOULD HAVE BEEN*, and it *SHALL BE*.
 
 I am not familiar with the philosophy of science, but I am pretty sure we need science for understanding the world in a relatively objective way. Languages can be artistic, but to understand what powers them, we have to inspect them scientifically. 
 
@@ -39,7 +39,7 @@ We are not going to define *language* in this post because it seems trickier tha
 
 Language science concerns languages. That's almost nonsense. But which utterances (or utterances not spoken out) qualify for the word 'language'? 
 
-In structuralism, only those materials recorded are considered legal projections (parole) of an abstract language (lingue) shared by the whole community. Only the abstract language behind these perceived *behaviors* is the authentic subject of language science.
+In structuralism, only those materials recorded are considered legal projections (parole) of an abstract language (langue) shared by the whole community. Only the abstract language behind these perceived *behaviors* is the authentic subject of language science.
 
 In Chomskyan generativism, utterances are considered merely forms that can be produced (generated, as the name suggests) by a presumed innate *physical* facility in the human brain, under the guidance of a *formal* system. These systems can produce forms that are not yet uttered, but there are forms they are not capable to produce. So, the main focus should have been describing the formal system and the innate facility possibly powering it. 
 
