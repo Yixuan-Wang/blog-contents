@@ -1,0 +1,37 @@
+friends:
+  - name: Allan Chain
+    avatar: 'https://avatars.githubusercontent.com/u/36528777?s=128&v=4'
+    link:
+      github: 'https://github.com/AllanChain'
+      blog: 'https://allanchain.github.io/blog/'
+
+  - name: Alice Space
+    avatar: 'https://avatars.githubusercontent.com/u/47878052?s=128&v=4'
+    link:
+      github: 'https://github.com/Alice-space'
+      blog: 'https://alicespace.cn/'
+
+  - name: Zinc Cat
+    avatar: 'https://avatars.githubusercontent.com/u/52513999?s=128&v=4'
+    link:
+      github: 'https://github.com/zinccat'
+      homepage: 'https://www.shijixin.net/'
+
+  - name: Bic Potato
+    avatar: 'https://avatars.githubusercontent.com/u/73098821?s=128&v=4'
+    link:
+      github: 'https://github.com/bic-potato'
+      homepage: 'https://www.bicpotato.net/'
+      blog: 'https://v2.blog.bicpotato.net/'
+
+  - name: Hamilton Huaji
+    avatar: 'https://avatars.githubusercontent.com/u/39890671?s=128&v=4'
+    link:
+      github: 'https://github.com/HamiltonHuaji'
+      blog: 'https://hamiltonhuaji.github.io/'
+
+  - name: Teddy Huang
+    avatar: 'https://avatars.githubusercontent.com/u/64199650?s=128&v=4'
+    link:
+      github: 'https://github.com/TeddyHuang-00'
+      blog: 'https://teddyhuang-00.github.io/'
