@@ -1,0 +1,23 @@
+name: "Dispatch Contents Issues Update"
+
+on:
+  issue_comment:
+  issues:
+    types: [opened, edited]
+  workflow_dispatch:
+
+jobs:
+  dispatch-contents-issues-update:
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name != 'issues' ||
+      github.event.sender.login == 'Yixuan-Wang' &&
+      (!github.event.issue || contains(github.event.issue.labels.*.name, '+'))
+
+    steps:
+      - name: Dispatch Contents Issues Update Event
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          repository: Yixuan-Wang/blog
+          token: ${{ secrets.ACCESS_TOKEN }}
+          event-type: contents-issues-update

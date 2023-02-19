@@ -1,0 +1,24 @@
+name: "Dispatch Contents Update"
+
+on:
+  push:
+    branches: [ v4 ]
+
+jobs:
+  dispatch-contents-update:
+    runs-on: ubuntu-latest
+    if: ${{ !startsWith(github.event.commits[0].message, '!') }}
+
+    steps:
+      - name: Dispatch Contents Update Event
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          repository: Yixuan-Wang/blog
+          token: ${{ secrets.ACCESS_TOKEN }}
+          event-type: contents-update
+          client-payload: |
+            {
+              "message": "${{ github.event.commits[0].message }}",
+              "name": "${{ github.event.commits[0].author.name }}",
+              "email": "${{ github.event.commits[0].author.email }}"
+            }
