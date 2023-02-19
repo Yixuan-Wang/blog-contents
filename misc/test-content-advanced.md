@@ -93,14 +93,14 @@ Custom values are :span[**fine**]{.px-1 class="bg-[#114514]" .text-white}.
 
 ```markdown
 :::div{ .card .bg-one-back .text-front }
-:h3[块也可以]{ class="!mb-0" }
+:h4[块也可以]{ class="!mb-0" }
 
 有一些内容。
 :::
 ```
 
 :::div{ .card .bg-one-back .text-front }
-:h3[块也可以]{ class="!mb-0" }
+:h4[块也可以]{ class="!mb-0" }
 
 有一些内容。
 :::
@@ -121,17 +121,17 @@ Custom values are :span[**fine**]{.px-1 class="bg-[#114514]" .text-white}.
 ## 莱比锡标注法
 
 ```html
-<leipzig-gloss def="#.:#" lang="en,ru,en,en" data="
-Russian
-My s Marko poexa-l-i avtobus-om v Peredelkino. 
-1PL COM Marko go-PST-PL bus-INS ALL Peredelkino
-'Marko and I went to Perdelkino by bus.'
-" />
+<component is="leipzig-glossing">
+  <p>Russian</p>
+  <p align lang="ru">My s Marko poexa-l-i avtobus-om v Peredelkino. </p>
+  <p align gloss>1PL COM Marko go-PST-PL bus-INS ALL Peredelkino</p>
+  <p>'Marko and I went to Perdelkino by bus.'</p>
+</component>
 ```
 
-<leipzig-gloss def="#.:#" lang="en,ru,en,en" data="
-Russian
-My s Marko poexa-l-i avtobus-om v Peredelkino. 
-1PL COM Marko go-PST-PL bus-INS ALL Peredelkino
-'Marko and I went to Perdelkino by bus.'
-" />
+<component is="leipzig-glossing">
+  <p>Russian</p>
+  <p align lang="ru">My s Marko poexa-l-i avtobus-om v Peredelkino. </p>
+  <p align gloss>1PL COM Marko go-PST-PL bus-INS ALL Peredelkino</p>
+  <p>'Marko and I went to Perdelkino by bus.'</p>
+</component>
