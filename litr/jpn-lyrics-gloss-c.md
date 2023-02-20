@@ -4,6 +4,8 @@ date: 2022-02-18
 category: litr
 tags:
   - lyrics
+genre: note
+series: [jpn-lyrics-gloss, 3]
 keywords:
   - pop
   - 'lang:jpn'

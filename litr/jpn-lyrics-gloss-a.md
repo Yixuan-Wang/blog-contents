@@ -5,6 +5,8 @@ category: litr
 genre: note
 tags:
   - lyrics
+genre: note
+series: [jpn-lyrics-gloss, 1]
 keywords:
   - folk
   - 'lang:jpn'

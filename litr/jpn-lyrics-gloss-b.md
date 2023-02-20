@@ -4,6 +4,8 @@ date: 2022-05-21
 category: litr
 tags:
   - lyrics
+genre: note
+series: [jpn-lyrics-gloss, 2]
 keywords:
   - rock
   - 'lang:jpn'
