@@ -2,7 +2,6 @@
 title: 日语歌词标注之甲
 date: 2022-07-20
 category: litr
-genre: note
 tags:
   - lyrics
 genre: note
