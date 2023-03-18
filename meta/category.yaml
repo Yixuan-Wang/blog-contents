@@ -1,0 +1,21 @@
+category:
+  comp:
+    name: "Computer"
+    description: >
+      Computer-related stuff. Computer Science, software, algorithms, AI and such.
+  ling:
+    name: "Language"
+    description: >
+      Language-related stuff. Language Science (or linguistics), language and such.
+  roam:
+    name: "Roam"
+    description: >
+      Travelling-related stuff. Transportation, tours, cultural observations and such. 
+  litr:
+    name: "Literature"
+    description: >
+      Essays, poetries and personal collections of other people's works.
+  misc:
+    name: "Miscellany"
+    description: >
+      Miscellaneous stuff. Test posts for typesetting magics.

@@ -4,7 +4,6 @@ date: '2020-05-05'
 category: misc
 tags:
   - test
-  - frontend
 ---
 
 学习层叠样式表时的玩耍：竖排《千字文》。

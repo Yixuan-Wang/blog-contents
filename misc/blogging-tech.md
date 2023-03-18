@@ -2,9 +2,8 @@
 title: 搭建博客的技术性思考
 date: 2020-10-11
 updated: 2021-02-14
-category: misc
+category: comp
 tags:
-  - essay
   - frontend
 outdated: true
 ---

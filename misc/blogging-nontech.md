@@ -1,7 +1,7 @@
 ---
 title: 搭建博客的非技术性思考
 date: 2020-10-05T15:31:57+08:00
-category: misc
+category: litr
 tags:
   - essay
 ---
