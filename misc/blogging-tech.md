@@ -1,10 +1,12 @@
 ---
 title: 搭建博客的技术性思考
 date: 2020-10-11
+updated: 2021-02-14
 category: misc
 tags:
   - essay
   - frontend
+outdated: true
 ---
 
 搭建静态博客时考虑的技术的的问题。
