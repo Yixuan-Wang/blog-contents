@@ -51,7 +51,7 @@ As a logic programming language, Coq (or Galina, to be exact) does incorporate l
 
 ```
 (value) -> (type) -> `Type`
-											 ↑
+                       ↑
 (proof) -> (prop) -> `Prop`
 ```
 
