@@ -11,7 +11,7 @@ keywords:
   - coq
 ---
 
-What is Curry-Howard Correspondence and how does the type system of Coq implements it.
+What is Curry-Howard Correspondence and how does the type system of Coq implement it.
 
 <!-- more -->
 
