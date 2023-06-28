@@ -19,3 +19,7 @@ category:
     name: "Miscellany"
     description: >
       Miscellaneous stuff. Test posts for typesetting magics.
+  life:
+    name: "Life"
+    description: >
+      Everything (trivial) about life. Workouts, cooking and so on.
