@@ -1,6 +1,6 @@
 ---
 title: "永远怀念 BicPotato"
-date: 2022-07-27
+date: 2023-07-27
 category: litr
 tags:
   - essay
@@ -9,6 +9,8 @@ tags:
 谢谢你，再见，bic。
 
 <!-- more -->
+
+<iframe src="//player.bilibili.com/player.html?aid=93234467&bvid=BV1nE41177gb&cid=159168788&page=1&t=107" style="height: 75ch; max-height: 50vh; width: 100%;" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ## 1
 
@@ -57,6 +59,3 @@ Bic 和我说过，真要想不开，是不会让我们知道的。他发了家�
 谢谢你，对不起。
 
 那，再见了。
-
-<iframe src="//player.bilibili.com/player.html?aid=93234467&bvid=BV1nE41177gb&cid=159168788&page=1&t=107" style="height: 75ch; max-height: 50vh; width: 100%;" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
