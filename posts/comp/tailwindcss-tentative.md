@@ -44,7 +44,8 @@ Tailwind CSS 从真香到放弃的个人经历。
 
 ## 关注点分离
 
-> TL;DR | Tailwind CSS **值得一试**，但它显然也**不是万金油**。
+> [!TLDR]
+> Tailwind CSS **值得一试**，但它显然也**不是万金油**。
 
 Tailwind CSS 的创始人 Adam Wathan 曾经写过一篇[文章](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)探讨“语义化 CSS 类名”（semantic classes）以及各种传统 CSS 最佳实践的弊端——这有一定的道理。尽管前端三件套的“关注点分离”思想让编写用户界面的体验得到了跨越式的提升，但这三部分最终还是要协同工作的，因此**耦合是不可避免的**。所以，“关注点分离”其实没有那么绝对。~~既然能接受 JSX，当然也可以把 CSS 混进去了！~~
 

@@ -10,6 +10,10 @@ tags:
 
 <!-- more -->
 
+> [!UPDATE]
+>
+> 2024-02-18：更新了 GitHub 风格的 Callout！
+
 ## 扩展 Markdown 语法及样式系统
 
 :::::::details[太长不想看]{open}
@@ -135,3 +139,30 @@ Custom values are :span[**fine**]{.px-1 class="bg-[#114514]" .text-white}.
   <p align gloss>1PL COM Marko go-PST-PL bus-INS ALL Peredelkino</p>
   <p>'Marko and I went to Perdelkino by bus.'</p>
 </component>
+
+## Callout
+
+```markdown
+> [!WARNING]
+> The following syntax is exclusive to Python 2.
+> ```python
+> print "Hello, world!"
+> ```
+```
+
+> [!WARNING]
+> The following syntax is exclusive to Python 2.
+> ```python
+> print "Hello, world!"
+> ```
+
+支持的 Callout 类型：
+
+- `INFO` / `NOTE`
+- `TIP`
+- `WARNING`
+- `CAUTION`
+- `IMPORTANT`
+- `TLDR`
+- `TBC`
+- `UPDATE`
