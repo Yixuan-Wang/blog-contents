@@ -48,7 +48,7 @@ from IPython import embed; embed(using=False)
 
 注意，`using` 是一个[没在文档里出现的参数](https://github.com/ipython/ipython/blob/e60c06a57de9f1e53fdd4b3a16c6a16c530e4f2a/IPython/terminal/embed.py#L398)，默认效果是关闭高亮和异步运行时功能，如此可以启用高亮。
 
-特别注意：内嵌交互终端的”全局命名空间“实际上并不是真正的全局命名空间，因此诸如闭包、在终端内定义全局变量、嵌套的生成式都不能使用，即使声明 `global` 也不行。
+特别注意：内嵌交互终端的“全局命名空间”实际上并不是真正的全局命名空间，因此诸如闭包、在终端内定义全局变量、嵌套的生成式都不能使用，即使声明 `global` 也不行。
 
 详细接口可以查看[其文档](https://ipython.readthedocs.io/en/stable/api/generated/IPython.terminal.embed.html)。可以将这个内嵌终端设作默认的断点钩子。
 
