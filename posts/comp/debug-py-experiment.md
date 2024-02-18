@@ -40,7 +40,7 @@ os.environ["PYTHONBREAKPOINT"] = "ipdb.set_trace" if sys.stdout.isatty() else ""
 
 ## 内嵌终端
 
-[IPython](https://ipython.org/) 是一个交互式的 Python REPL，提供了代码高亮和补全等功能。可以用以下代码在的程序中启动一个**内嵌的交互终端**，其全局命名空间将继承调用处的全局和局部命名空间。
+[IPython](https://ipython.org/) 是一个交互式的 Python REPL，提供了代码高亮和补全等功能。可以用以下代码在程序中启动一个**内嵌的交互终端**，其全局命名空间将继承调用处的全局和局部命名空间。
 
 ```python
 from IPython import embed; embed(using=False)
@@ -118,4 +118,5 @@ assert (s := input_ids.shape[0]) == BATCH_SIZE, f"Got batch size {s}, {BATCH_SIZ
 
 但 Python 内置的 [`logging`](https://docs.python.org/3/library/logging.html) 模块过于复杂，配置需要写大量模版代码。`loguru` 是一个不错的替代品。
 
-*未完待续*
+> [!TBC]
+> 关于 `loguru` 的使用和配置
