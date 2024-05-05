@@ -176,7 +176,7 @@ logger.opt(lazy=True).debug("If sink level <= DEBUG: {x}", x=lambda: expensive_f
 
 ## 实时通知
 
-Discord Webhook 可以提供开箱可用的 bot 通知体验。[`notifiers`]([liiight/notifiers: The easy way to send notifications (github.com)](https://github.com/liiight/notifiers)) 没有提供 Discord API，但是提供了 Slack API，可以搭配 Discord Webhook 的 Slack 兼容层使用。以下是创建标准库 `logging` 的处理器的代码：
+Discord Webhook 可以提供开箱可用的 bot 通知体验。[`notifiers`](https://github.com/liiight/notifiers) 没有提供 Discord API，但是提供了 Slack API，可以搭配 Discord Webhook 的 Slack 兼容层使用。以下是创建标准库 `logging` 的处理器的代码：
 
 ```python
 from notifiers.logging import NotificationHandler
