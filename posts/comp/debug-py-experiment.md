@@ -7,7 +7,6 @@ tags:
 keywords:
   - productivity
   - academia
-status: tbc
 ---
 
 面向实验代码的 Python 调试技巧。
@@ -74,6 +73,7 @@ s(tep): 单步调试
 n(ext): 当前函数内单步调试  # 不会停止在调用的下层函数中
 c(ontinue): 继续运行
 r(eturn): 继续运行到函数返回
+b(reak): 在某一行增加断点
 
 l(ist): 列出源代码
 j(ump): 跳到某一行执行
@@ -116,7 +116,84 @@ assert (s := input_ids.shape[0]) == BATCH_SIZE, f"Got batch size {s}, {BATCH_SIZ
 
 ~~除了 JavaScript 以外~~使用 `print` 进行调试并不理想。它不具备输出程序元信息的功能，也不方便批量关闭（而日志可以通过修改全局日志级别关闭低级别的信息）。对于在集群上运行（甚至长时间运行）的程序来说，写入文件甚至直接向手机推送通知可能比打印到标准输出更高效且有用😏。
 
-但 Python 内置的 [`logging`](https://docs.python.org/3/library/logging.html) 模块过于复杂，配置需要写大量模版代码。`loguru` 是一个不错的替代品。
+但 Python 内置的 [`logging`](https://docs.python.org/3/library/logging.html) 模块过于复杂，配置需要写大量模版代码，~~甚至 API 的大小写都不符合 Python 的惯例~~？[`loguru`](https://github.com/Delgan/loguru) 是一个不错的替代品。
 
-> [!TBC]
-> 关于 `loguru` 的使用和配置
+`loguru` 一般使用包顶级的 `logger` 单例暴露的 API，比如 `logger.info` 和 `logger.warning`。创建新的日志 Sink 只需调用 `logger.add`：
+
+```python
+# 文件
+# - 带时间戳的
+logger.add("file_{time}.log")
+# - 自动旋转
+logger.add("file.log", rotation="1 week")
+
+# 标准输出流（默认启用）
+logger.add(sys.stdout)
+
+# 其他标准 Handler
+logger.add(NotificationHandler(...))
+```
+
+可以使用以下 `loguru` 提供的代码劫持标准库的 `logging` 处理器：
+
+```python
+class InterceptHandler(logging.Handler):
+    def emit(self, record: logging.LogRecord) -> None:
+        # Get corresponding Loguru level if it exists.
+        level: str | int
+        try:
+            level = logger.level(record.levelname).name
+        except ValueError:
+            level = record.levelno
+
+        # Find caller from where originated the logged message.
+        frame, depth = inspect.currentframe(), 0
+        while frame and (depth == 0 or frame.f_code.co_filename == logging.__file__):
+            frame = frame.f_back
+            depth += 1
+
+        logger.opt(depth=depth, exception=record.exc_info).log(level, record.getMessage())
+
+logging.basicConfig(handlers=[InterceptHandler()], level=0, force=True)
+```
+
+此外，`loguru` 还提供了一些高级 API 用于复用：
+
+```python
+# 添加上下文
+# - 绑定风味
+binded_logger = logger.bind(ip="192.168.0.1", user="someone")
+# - 上下文管理器风味
+with logger.contextualize(task=task_id):
+  logger.info(...)
+
+# 动态上下文
+patched_logger = logger.patch(lambda record: record["extra"].update(utc=datetime.utcnow()))
+  
+# 懒加载
+logger.opt(lazy=True).debug("If sink level <= DEBUG: {x}", x=lambda: expensive_function())
+```
+
+## 实时通知
+
+Discord Webhook 可以提供开箱可用的 bot 通知体验。[`notifiers`]([liiight/notifiers: The easy way to send notifications (github.com)](https://github.com/liiight/notifiers)) 没有提供 Discord API，但是提供了 Slack API，可以搭配 Discord Webhook 的 Slack 兼容层使用。以下是创建标准库 `logging` 的处理器的代码：
+
+```python
+from notifiers.logging import NotificationHandler
+
+handler = NotificationHandler("slack", defaults={
+  "webhook_url": "{}/slack".format(os.environ["DISCORD_WEBHOOK_URL"]),
+})
+```
+
+标准库可以使用 `Logger.addHandler` 注册这一处理器，而 `loguru` 可以使用下列代码：
+
+```python
+logger.add(handler, level="INFO", colorize=True, format=(
+    f"```ansi\n"
+    "{time:MM-DD HH:mm:ss} <level>{level: <8}</level> {name}:{function}:{line}\n"
+    "<level>{message}</level>\n```"
+))
+```
+
+Discord 支持利用 `ansi` 代码块格式化文本——相比 Embed 块来说代码块视觉负担要小一些，在密密麻麻的日志里更容易看清。记得要手动打开着色选项 。同时，可以把输出等级调高到 `INFO` 防止被 `DEBUG` 和 `TRACE` 消息淹没。
