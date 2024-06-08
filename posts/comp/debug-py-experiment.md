@@ -174,6 +174,10 @@ patched_logger = logger.patch(lambda record: record["extra"].update(utc=datetime
 logger.opt(lazy=True).debug("If sink level <= DEBUG: {x}", x=lambda: expensive_function())
 ```
 
+> [!WARNING]
+>
+> [`loguru` 对动态修改日志的过滤等级支持很差](https://github.com/Delgan/loguru/issues/138)。可以通过设置 `LOGURU_LEVEL` 环境变量来改变默认日志处理器的等级。不建议使用 `os.environ` 修改，因为默认日志处理器在包导入时已经被隐式初始化。
+
 ## 实时通知
 
 Discord Webhook 可以提供开箱可用的 bot 通知体验。[`notifiers`](https://github.com/liiight/notifiers) 没有提供 Discord API，但是提供了 Slack API，可以搭配 Discord Webhook 的 Slack 兼容层使用。以下是创建标准库 `logging` 的处理器的代码：
