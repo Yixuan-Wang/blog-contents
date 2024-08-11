@@ -3,6 +3,7 @@ friends:
     avatar: "https://avatars.githubusercontent.com/u/36528777?s=128&v=4"
     link:
       github: "https://github.com/AllanChain"
+      homepage: "https://allanchain.github.io/"
       blog: "https://allanchain.github.io/blog/"
 
   - name: AliceSpace
@@ -15,7 +16,7 @@ friends:
     avatar: "https://avatars.githubusercontent.com/u/52513999?s=128&v=4"
     link:
       github: "https://github.com/zinccat"
-      homepage: "https://www.shijixin.net/"
+      homepage: "https://www.shijixin.me/"
 
   - name: BicPotato
     avatar: "https://avatars.githubusercontent.com/u/73098821?s=128&v=4"
@@ -40,8 +41,6 @@ friends:
     avatar: "https://avatars.githubusercontent.com/u/82707775?s=128&v=4"
     link:
       github: "https://github.com/xhzgenius"
-      homepage: "https://xhzgenius.github.io/"
-      blog: "https://yuyi.site/"
 
   - name: EtaoinWu
     avatar: "https://avatars.githubusercontent.com/u/22369305?s=128&v=4"
