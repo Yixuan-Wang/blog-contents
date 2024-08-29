@@ -5,6 +5,7 @@ category: comp
 tags:
   - pl
   - python
+series: [py-fp, 0]
 keywords:
   - fp
 ---
