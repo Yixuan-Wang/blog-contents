@@ -137,9 +137,9 @@ JavaScript 提案的 `|>` ，Julia 里的 `|>` 还有 R 的 `%>%` 等链式调�
 
 ```python
 ds.read(path_to_dataset)
-	| filter_valid
-  | select_col_result
-  | map_to_exponential
+    | filter_valid
+    | select_col_result
+    | map_to_exponential
 ```
 
 之前和 Teddy Huang 讨论，他提出了一个[想法和实现](https://teddyhuang-00.github.io/zh/posts/DevLog/hacks-to-python.html#pipeline-operator)。我们最初使用了 `|` 这个在 Shell 的管道运算符作为链式调用的运算符。顺着这个思路——前文提到了 Haskell 的 `$` 和 `.` 运算符，Haskell 其实有多种用于函数组合的机制。能否将这些机制通过运算符重载迁移到非常不同的 Python 中呢？
