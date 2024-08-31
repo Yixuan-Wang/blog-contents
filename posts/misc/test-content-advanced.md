@@ -1,6 +1,7 @@
 ---
 title: 页面高级内容测试
 date: 2022-01-29
+updated: 2024-08-31
 category: misc
 tags:
   - test
@@ -12,7 +13,8 @@ tags:
 
 > [!UPDATE]
 >
-> 2024-02-18：更新了 GitHub 风格的 Callout！
+> - 2024-08-31：加入了 Mermaid 图的支持！
+> - 2024-02-18：更新了 GitHub 风格的 Callout！
 
 ## 扩展 Markdown 语法及样式系统
 
@@ -166,3 +168,52 @@ Custom values are :span[**fine**]{.px-1 class="bg-[#114514]" .text-white}.
 - `TLDR`
 - `TBC`
 - `UPDATE`
+
+:::::details[所有类型] 
+
+> [!INFO]
+> This is an information message.
+
+> [!TIP]
+> This is a tip message.
+
+> [!WARNING]
+> This is a warning message.
+
+> [!CAUTION]
+> This is a caution message.
+
+> [!IMPORTANT]
+> This is an important message.
+
+> [!TLDR]
+> This is a TLDR message.
+
+> [!TBC]
+> This is a comming-soon message.
+
+> [!UPDATE]
+> This is an update message.
+:::::
+
+
+## Mermaid 图
+
+````markdown
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
+````
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
+
+Mermaid 依赖在运行时从 CDN 动态加载。颜色根据当前主题色生成。改变暗色模式和主题色后需要刷新页面以重新取色。
