@@ -1,0 +1,35 @@
+name: Add Friend
+description: Request a friend link! 
+title: 'friend-[Friend Name]'
+assignees: 'Yixuan-Wang'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Greetings!** Thank you for your friend link request!
+  - type: input
+    id: friend_name
+    attributes:
+      label: Name
+      description: |
+        What's your name? Use `CamelCase` if possible.
+    validations:
+      required: true
+  - type: input
+    id: friend_homepage
+    attributes:
+      label: Homepage
+      description: |
+        Do you have a homepage? A homepage is where you put your personal information.
+  - type: input
+    id: friend_blog
+    attributes:
+      label: Blog
+      description: |
+        Do you have a blog? A blog is where you put your writings.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra
+      description: |
+        Anything else you want to say?
