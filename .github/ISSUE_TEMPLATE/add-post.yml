@@ -1,0 +1,80 @@
+name: 'Add Post'
+description: Add a new post. This only works for the blog owner, @Yixuan-Wang.
+title: new-note
+labels: ["+"]
+body:
+  - type: textarea
+    id: frontmatter
+    attributes:
+      label: Frontmatter
+      value: |
+        ---
+        title: New Post
+        date: 1970-01-01T00:00:00-00:00
+        category: (category)
+        tags: (tags)
+        keywords: (keywords, optional)
+        lang: (language, zh-Hans as default)
+        genre: note
+        status: tbc
+        ---
+    validations:
+      required: true
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract
+      value: |
+        Lorem ipsum dolor sit amet.
+
+        <!-- more -->
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        References for the post metadata.
+
+        ### Category and Tags
+
+        The most likely categories are `comp`, `ling`, `life`, `litr` and `roam`.
+        Check the current [tag taxonomy page](https://blog.yixuan-wang.site/tags).
+
+        ### Frontmatter
+
+        ```typescript
+        interface FrontmatterRaw {
+          title: string;
+          date: Date | string;
+          updated?: Date | string;
+          genre?: string;
+          category: string;
+          tags: string[];
+          series?: [string, number];
+          keywords?: string[];
+          lang?: string;
+          alias?: string | string[];
+          draft?: boolean;
+          outdated?: boolean;
+          status?: Status;
+        }
+        ```
+
+        ### Genre
+
+        - `article`: Article
+        - `note`: Note
+        - `sheet`: Sheet
+
+        ### Status
+
+        ```typescript
+        export enum Status {
+          DRAFT = "draft",
+          FINISHED = "finished",
+          TBC = "tbc",
+          STALE = "stale",
+          OUTDATED = "outdated",
+        }
+        ```
+
