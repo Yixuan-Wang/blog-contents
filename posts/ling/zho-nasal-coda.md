@@ -3,8 +3,7 @@ title: 汉语方言的鼻音韵尾数量
 date: 2020-07-16T11:48:00+08:00
 category: ling
 tags:
-  - comparative
-  - dialectology
+  - language
 keywords:
   - chinese
 ---

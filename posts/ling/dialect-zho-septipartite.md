@@ -3,8 +3,7 @@ title: 汉语方言的七分法
 date: 2021-12-27T14:12:00+08:00
 category: ling
 tags:
-  - comparative
-  - dialectology
+  - language
 keywords:
   - chinese
 ---

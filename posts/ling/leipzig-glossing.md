@@ -3,9 +3,9 @@ title: 莱比锡标注法
 date: 2021-08-03T23:14:00+08:00
 category: ling
 tags:
-  - comparative
+  - field
 keywords:
-  - fieldworks
+  - academia
 novue: true
 ---
 

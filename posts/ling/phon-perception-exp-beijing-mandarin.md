@@ -8,6 +8,7 @@ keywords:
   - psycho-ling
   - chinese
   - mandarin
+  - academia
 ---
 
 语音学及实验语音学两门课的期末实验。研究了北京话 j - zh 声母和 an - ang 韵母的感知问题。

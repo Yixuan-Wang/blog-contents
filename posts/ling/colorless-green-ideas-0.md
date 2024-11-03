@@ -4,9 +4,10 @@ date: 2022-11-14
 category: ling
 series: [colorless-green-ideas, 0]
 tags:
-  - language-science
+  - lang-phil
 keywords:
-  - gibberish
+  - academia
+  - language-science
 lang: en
 ---
 
