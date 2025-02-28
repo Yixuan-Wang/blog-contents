@@ -59,3 +59,45 @@ Evanston 和那里的西北大学，湖滨有有趣的涂鸦石头，也许可�
 想起来看湖的时间，大多已经是 emo 的深夜，只有航标灯静静地闪烁。但如果凑巧已经日出，太阳从青色的颤抖的水面上畏畏缩缩地探出头来，倒也是好看的罢。狂暴的东北风经常踏着湖水而来，不间断地摇晃着我的窗户。
 
 离湖还是太近了。如果这湖不是在 Chicago，那该有多好。
+
+## 图集
+
+### 冬 ☃️
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20240121_232006475.NIGHT_%E5%89%AF%E6%9C%AC.d16211f4a037ac9496c011b1ad77ea36.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20231221_202834921.c47497559accbe3754eb3cce9d5b7794.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20240114_214901072_%E5%89%AF%E6%9C%AC.dc1435b7aa2846ca341b75c90af495e8.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/1000023942.39e55b5795730cd2d84f56d791b0ac6a.jpg)
+
+### 春 🌸
+
+![](https://img.yixuan-wang.site/2025/02/1000004018-01.7d0a67501647c3009a86d487e8b4770e.jpeg)
+
+![](https://img.yixuan-wang.site/2025/02/1000007923-02.40495d3619daad5734d3a4bc2e4065d0.jpeg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20240407_223855776.b3efbc3df6dafdce745277378f742c54.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20240504_234311965_%E5%89%AF%E6%9C%AC.7a7fc07086666856bc771bf558e82709.jpg)
+
+### 夏 🌿
+
+![](https://img.yixuan-wang.site/2025/02/1000017345.ffe9367c3df28f0381efbdca9d70fb52.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/1000019472.7d946e0fd2420db0b73b86d280967e85.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20240817_235922051.f697fc9b7f0380fcebb495ad2692930f.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20240818_000416854.4914a6f50a2194c9be74970a8ace5dec.jpg)
+
+### 秋 🍂
+
+![](https://img.yixuan-wang.site/2025/02/IMG_20231007_181104.9a9f027357174067263ce09f80bafafd.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20241013_224711492.d466e6271287ecfd72d03470d2b6159a.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/PXL_20241026_213805230.41109a164340974ed978e2b5b3d73a5e.jpg)
+
+![](https://img.yixuan-wang.site/2025/02/1000021453.7b5cdbd0a4b49357f69a9798ed5549d7.jpg)
