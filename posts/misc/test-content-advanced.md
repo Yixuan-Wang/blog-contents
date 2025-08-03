@@ -216,4 +216,30 @@ graph TD;
   C-->D;
 ```
 
-Mermaid 依赖在运行时从 CDN 动态加载。颜色根据当前主题色生成。改变暗色模式和主题色后需要刷新页面以重新取色。
+Mermaid 依赖在运行时从 CDN 动态加载。目前试用固定颜色。
+
+## 地图
+
+```html
+<component
+  is="geo"
+  lat="39.9935"
+  long="116.303873"
+  tile="osm"
+/>
+
+<!--
+tile="osm"
+tile="carto"
+tile="tianditu"
+-->
+```
+
+<component is="geo" lat="39.9935" long="116.303873" tile="osm"></component>
+
+<component is="geo" lat="39.9935" long="116.303873" tile="carto"></component>
+
+<component is="geo" lat="39.9935" long="116.303873" tile="tianditu"></component> 
+
+
+基于 Leaflet 实现的地图。
