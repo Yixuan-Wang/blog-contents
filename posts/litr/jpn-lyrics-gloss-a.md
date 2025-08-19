@@ -17,9 +17,16 @@ keywords:
 
 ## 紺色のうねりが
 
-:::details[插图]{open}
-<img src="https://www.ghibli.jp/gallery/kokurikozaka049.jpg">
-:::
+<component is="visible" target="h2">
+<style>
+html {
+  --color-original-one: rgba(228, 198, 105) !important;
+  --color-original-two: rgba(135, 139, 38) !important;
+  background: fixed center / cover no-repeat url("https://www.ghibli.jp/gallery/kokurikozaka049.jpg") oklch(from var(--color-one-back) l calc(0.25 * c) h) !important;
+  background-blend-mode: overlay;
+}
+</style>
+</component>
 
 原作　宮沢賢治「生徒諸君に寄せる」  
 词　　宮崎駿・宮崎吾朗  
@@ -145,6 +152,15 @@ keywords:
 
 
 ## 生きてることが辛いなら
+
+<component is="visible" target="h2">
+<style>
+html {
+  --color-original-one: #77a9c5 !important;
+  --color-original-two: rgba(107, 156, 130, 1) !important;
+}
+</style>
+</component>
 
 词　御徒町凧  
 曲　森山直太朗  
@@ -387,6 +403,15 @@ keywords:
 
 ## 夢の中の空
 
+<component is="visible" target="h2">
+<style>
+html {
+  --color-original-one: #6990b9 !important;
+  --color-original-two: #b9e2fd !important;
+}
+</style>
+</component>
+
 词　佐藤良成  
 曲　佐藤良成  
 歌　ハンバート·ハンバート
@@ -482,6 +507,15 @@ keywords:
 :::
 
 ## 素晴らしい世界
+
+<component is="visible" target="h2">
+<style>
+html {
+  --color-original-one: rgba(255, 243, 29) !important;
+  --color-original-two: rgba(0, 0, 0) !important;
+}
+</style>
+</component>
 
 词　森山直太朗・御徒町凧  
 曲　森山直太朗・御徒町凧  

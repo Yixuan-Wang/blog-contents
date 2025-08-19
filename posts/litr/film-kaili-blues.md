@@ -11,6 +11,13 @@ tags:
 
 <!-- more -->
 
+<style>
+:root {
+  --color-original-one: #0e6969 !important;
+  --color-original-two: #d55528 !important;
+}
+</style>
+
 > [!TIP]
 >
 > 不含剧透。

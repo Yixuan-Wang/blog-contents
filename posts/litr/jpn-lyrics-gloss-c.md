@@ -17,6 +17,15 @@ keywords:
 
 ## :span[残酷な天使]{style="color:rgba(138, 249, 97)"}の:span[テーゼ]{style="color:rgba(134, 73, 193);"}
 
+<component is="visible" target="h2">
+<style>
+html {
+  --color-original-one: rgba(138, 249, 97, 1) !important;
+  --color-original-two: rgba(134, 73, 193, 1) !important;
+}
+</style>
+</component>
+
 《新世纪福音战士》 TV 版 OP  
 词　及川眠子  
 曲　佐藤英敏 
@@ -62,6 +71,15 @@ keywords:
 :::
 
 ### :span[A]{style="color:rgba(204, 208, 213)"}:span[0]{style="color:rgba(63, 91, 194)"}
+
+<component is="visible" target="h3">
+<style>
+html {
+  --color-original-one: rgba(63, 91, 194, 1) !important;
+  --color-original-two: rgba(204, 208, 213, 1) !important;
+}
+</style>
+</component>
 
 <component is="leipzig-glossing">
   <p align lang="ja">ざんこくな てんしの ように 　 しょうねん よ しんわに なれ</p>
@@ -122,6 +140,15 @@ keywords:
 </component>
 
 ### :span[A]{style="color:rgba(138, 249, 97)"}:span[1]{style="color:rgba(134, 73, 193);"}
+
+<component is="visible" target="h3">
+<style>
+html {
+  --color-original-one: rgba(138, 249, 97, 1) !important;
+  --color-original-two: rgba(134, 73, 193, 1) !important;
+}
+</style>
+</component>
 
 <component is="leipzig-glossing">
   <p align lang="ja">ざんこくな てんしの テーゼ 　 まどべ から やがて とびたつ</p>
@@ -206,6 +233,15 @@ keywords:
 
 ### :span[A]{style="color:rgba(227, 104, 36)"}:span[2]{style="color:rgba(158, 1, 22)"}
 
+<component is="visible" target="h3">
+<style>
+html {
+  --color-original-one: rgba(227, 104, 36, 1) !important;
+  --color-original-two: rgba(158, 1, 22, 1) !important;
+}
+</style>
+</component>
+
 
 <component is="leipzig-glossing">
   <p align lang="ja">ざんこくな てんしの テーゼ 　 かなしみが そして はじまる</p>
@@ -256,6 +292,15 @@ keywords:
 </component>
 
 ### A1
+
+<component is="visible" target="h3">
+<style>
+html {
+  --color-original-one: rgba(134, 73, 193, 1) !important;
+  --color-original-two: rgba(138, 249, 97, 1) !important;
+}
+</style>
+</component>
 
 <component is="leipzig-glossing">
   <p align lang="ja">ざんこくな てんしの テーゼ 　 まどべ から やがて とびたつ</p>

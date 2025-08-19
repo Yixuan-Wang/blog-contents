@@ -17,7 +17,18 @@ keywords:
 
 ## :span[グランドエスケープ]{style="color: rgba(0, 170, 245)"}
 
-<img src="https://www.tenkinoko.com/assets/images/top/v.jpg">
+<!-- <img src="https://www.tenkinoko.com/assets/images/top/v.jpg"> -->
+
+<component is="visible" target="h2">
+<style>
+html {
+  --color-original-one: rgba(0, 170, 245) !important;
+  --color-original-two: rgba(81, 99, 144) !important;
+  background: fixed center / cover no-repeat url("https://www.tenkinoko.com/assets/images/top/v.jpg") oklch(from var(--color-one-back) l calc(0.25 * c) h) !important;
+  background-blend-mode: overlay;
+}
+</style>
+</component>
 
 词　野田洋次郎  
 曲　野田洋次郎  
