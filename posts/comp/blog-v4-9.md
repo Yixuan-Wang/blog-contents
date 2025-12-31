@@ -53,7 +53,7 @@ graph LR;
 
 ```
 
-But how are the Astro components generated? The Markdown parser has to be baked in to the loading pipeline to parse the Markdown to HTML. Since Astro component syntax is a superset of HTML, with some slight cleaning these HTML become valid, importable Astro components. Meanwhile, all metadata extracted from frontmatter, like dates and taxonomies, and also the full post list, are serialized into a plain text metadata file. Then on the Astro part, it reads all the post components and metadata from these virtual files generated within Vite, and renders them.
+But how are the Astro components generated? The Markdown parser has to be baked into the loading pipeline to parse the Markdown to HTML. Since Astro component syntax is a superset of HTML, with some slight cleaning these HTML become valid, importable Astro components. Meanwhile, all metadata extracted from frontmatter, like dates and taxonomies, and also the full post list, are serialized into a plain text metadata file. Then on the Astro part, it reads all the post components and metadata from these virtual files generated within Vite, and renders them.
 
 This works, but in an ugly way:
 
