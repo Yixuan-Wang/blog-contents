@@ -128,11 +128,11 @@ Let’s inspect the first 256 codepoints of Unicode, which corresponds to the fi
 | `U+AE` - `U+BF` | ✅ | Punctuations and symbols, `®` to `¿`. |
 | `U+C0` - `U+FF` | ✅ | Extended Latin letters, `À` to `ÿ`, and also `×÷`. |
 
-<img alt="Block Basic Latin and Latin Supplement 1" style="max-width: max(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/block-latin-basic-supplement-1.003115127f174ec9408cfb45225d884e.png">
+<img alt="Block Basic Latin and Latin Supplement 1" style="max-width: min(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/block-latin-basic-supplement-1.003115127f174ec9408cfb45225d884e.png">
 
 Then, how to visualize these invisible codepoints? We have [Latin Extended A](https://en.wiktionary.org/wiki/Appendix:Unicode/Latin_Extended-A) block from `U+100` to `U+17F`. Just fill these blanks from that block! The following chart shows the result. Gray cells are those characters filled from Latin Extended A, and black cells are those illegal UTF-8 bytes.
 
-<img alt="OpenAI BPE Representation" style="max-width: max(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/oai-bpe-repr.ffffb5608485174de6bf4a7b0a4b79d8.png">
+<img alt="OpenAI BPE Representation" style="max-width: min(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/oai-bpe-repr.ffffb5608485174de6bf4a7b0a4b79d8.png">
 
 
 Since space is `U+20`, and it’s UTF-8 representation is `0x20`, it becomes `Ġ`. We borrow Latin Extended A letters until `U+143`, which is `Ń`. Because of this infill, the offset is not always 256. It can also be `0xA2` = 162 for bytes from `0x7F` to `0xA0`, and additionally `0xAD` maps to `U+143`. 
@@ -243,11 +243,11 @@ You might ask why don’t we just map Huggingface’s `Tokenizer.decode`[^2] ove
 
 The following plot shows the distribution of Qwen 3’s tokenizer vocabulary over byte lengths.
 
-<img alt="Qwen Token Length Distribution" style="max-width: max(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/image-20260108180532674.5000b9830aca504a2e8be423c3aa16a7.png" />
+<img alt="Qwen Token Length Distribution" style="max-width: min(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/image-20260108180532674.5000b9830aca504a2e8be423c3aa16a7.png" />
 
 And the following heatmap shows the leading byte of every token within Qwen 3’s tokenizer vocabulary. Among 151669 tokens, 53021 starts with `Ġ`, the whitespace. Most CJK characters start with `0xE4` to `0xE9` in their UTF-8 representation, and we can see that `0xE4` to `0xE9` is also a hot region.
 
-<img alt="Qwen Token's Leading Bytes" style="max-width: max(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/qwen-token-lead-byte.68dfda9ca627e33827795e1ef709e302.png">
+<img alt="Qwen Token's Leading Bytes" style="max-width: min(64ch, 75%)" src="https://img.yixuan-wang.site/2026/01/qwen-token-lead-byte.68dfda9ca627e33827795e1ef709e302.png">
 
 All 8,105 Chinese characters within their [*List of Commonly Used Standard Chinese Characters*](https://zh.wikisource.org/wiki/%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E6%B1%89%E5%AD%97%E8%A1%A8) (《通用规范汉字表》) have their own dedicated tokens. 25,308 tokens start with a basic Chinese character within the CJK Unified Ideograph block (`U+4E00-U+9FFF`)[^3], among them 8,501 tokens contain only 1 character. No Chinese only tokens contain more than 4 characters.
 
