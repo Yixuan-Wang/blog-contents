@@ -6,6 +6,8 @@ category: comp
 tags:
   - devops
   - network
+keywords:
+  - ssh
 ---
 
 Use connection multiplexing to avoid passwords, keyphrases or 2FA again and again.
