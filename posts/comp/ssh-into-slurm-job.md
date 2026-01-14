@@ -35,6 +35,10 @@ Host <bastion>-debug
 Add this configuration to your `~/.ssh/config`, and then SSH to your latest job named `debug` with `ssh <bastion>-debug`, or connect
   your [Visual Studio Code Remote SSH](https://code.visualstudio.com/docs/remote/ssh) or [Zed Remote](https://zed.dev/docs/remote-development)
   using the host `<bastion>-debug`.
+  
+A benefit of this approach: you don't need to use a fixed node, or copy-paste the node allocated for your job. All nodes running the `debug` job
+  are collapsed into one host.
+This also keeps a clean history for your shell and editor workspaces.
 
 ## Explanation
 
