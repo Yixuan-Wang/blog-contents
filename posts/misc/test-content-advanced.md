@@ -243,3 +243,49 @@ tile="tianditu"
 
 
 基于 Leaflet 实现的地图。
+
+## 多媒体链接
+
+```markdown
+<component is="medialinks">
+  title: "Never Gonna Give You Up"
+  artist: "Rick Astley"
+  album: "Whenever You Need Somebody"
+  albumArt: ...
+  links:
+    spotify: ...
+    apple: ...
+    youtube-music: ...
+    netease: ...
+    qq: ...
+    youtube: ...
+    bilibili: ...
+</component>
+```
+
+<component is="medialinks">
+  title: "Never Gonna Give You Up"
+  artist: "Rick Astley"
+  album: "Whenever You Need Somebody"
+  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ce/6d/5b/ce6d5b48-8c36-b990-3b9c-81862fadb459/0859381157694.jpg/632x632bb.webp"
+  links:
+    spotify: "https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC"
+    apple: "https://music.apple.com/us/album/never-gonna-give-you-up/1559885420?i=1559885421"
+    youtube-music: "https://music.youtube.com/watch?v=lYBUbBu4W08"
+    netease: "https://music.163.com/#/song?id=5221167"
+    qq: "https://c6.y.qq.com/base/fcgi-bin/u?__=jkKN3fFW5dg2"
+    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    bilibili: "https://www.bilibili.com/video/BV1Zt411x7h7"
+</component>
+
+<component is="medialinks">
+  title: "愛にできることはまだあるかい"
+  artist: "RADWIMPS"
+  album: "天気の子"
+  type: video
+  links:
+    youtube: "https://www.youtube.com/watch?v=EQ94zflNqn4"
+    bilibili: "https://www.bilibili.com/video/BV1fa411n7hZ"
+</component>
+
+支持多种流媒体平台链接的卡片组件，使用 YAML 作为数据格式。可以使用 `type: video` 来指定显示为视频。

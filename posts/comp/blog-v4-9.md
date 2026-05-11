@@ -6,7 +6,6 @@ tags:
   - frontend
 keywords:
   - blogging
-status: tbc
 ---
 
 Another winter-rewrite of my blog, although too incremental for you to notice.
@@ -15,7 +14,7 @@ Another winter-rewrite of my blog, although too incremental for you to notice.
 
 > [!INFO]
 >
-> At this time, the v4.9 hasn’t be stablized *yet*. You can try the [prerelease version](https://head.blog-7mf.pages.dev) if you want.
+> At this time, the v4.9 hasn’t be stablized *yet*. You can try the [prerelease version](https://dev.blog-7mf.pages.dev) if you want.
 
 It’s been 3 years since [v4](https://blog.yixuan-wang.site/post/blog-v4) of my blog, which was released in the [winter of 2023](https://github.com/Yixuan-Wang/blog/commit/c4589a6a89f51f8b895e9b067a343210229f1d3c). It’s a major overhaul, built upon a rather nascent framework, [Astro](https://astro.build). Surprisingly, this hearse[^1] survives, and I suspect it can last even longer should I not complete this rewrite.
 
@@ -234,15 +233,26 @@ Not everything was kept intact after this rewrite. There was a taxonomy page, wh
 
 ## Nice New Stuff
 
-> [!TBC]
->
-> I’m still packing new stuff into this update, so stay tuned for more.
-
 ### Comments
 
 I migrated comments from Giscus to [Waline](https://waline.js.org/). I no longer require my readers to have a GitHub account to interact with me. Even though lots of my readers *do have a GitHub account*, they might not want to grant it access to my spurious infrastructure. That’s okay. With the new comment system with a dedicated backend, all comments are welcomed.
 
 ### Mermaid
 
-Now Mermaid graphs have adaptive colors and dynamic dark mode support.
+Now Mermaid graphs have adaptive colors and dynamic dark mode support. Mermaid is loaded from CDN, as it cannot be reliably rendered within Node.js.
+
+### Media Links
+
+Another long missing feature is a media links card. The media streaming platforms are walled and fragmented. Similar to color palettes, I don’t mind what platforms my readers prefer. Everyone should have access to the media I shared at a place they feel most comfortable.
+
+<component is="medialinks">
+title: 米店
+artist: 张玮玮、郭龙
+album: 白银饭店
+albumArt: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/03/7d/e8/037de8b9-444d-1dc9-ec42-1107eb0f41ed/4894944303565.jpg/632x632bb.webp
+links:
+  apple: https://music.apple.com/cn/album/%E7%B1%B3%E5%BA%97/1707829774?i=1707829783
+  qq: https://i.y.qq.com/v8/playsong.html?songid=106007924&songtype=0#webchat_redirect
+  netease: https://music.163.com/song?id=26494698
+</component>
 
