@@ -12,9 +12,9 @@ Another winter-rewrite of my blog, although too incremental for you to notice.
 
 <!-- more -->
 
-> [!INFO]
+> [!UPDATE]
 >
-> At this time, the v4.9 hasn’t be stablized *yet*. You can try the [prerelease version](https://dev.blog-7mf.pages.dev) if you want.
+> v4.9.0 is finally stablized on 2026-10-31!
 
 It’s been 3 years since [v4](https://blog.yixuan-wang.site/post/blog-v4) of my blog, which was released in the [winter of 2023](https://github.com/Yixuan-Wang/blog/commit/c4589a6a89f51f8b895e9b067a343210229f1d3c). It’s a major overhaul, built upon a rather nascent framework, [Astro](https://astro.build). Surprisingly, this hearse[^1] survives, and I suspect it can last even longer should I not complete this rewrite.
 
