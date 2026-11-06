@@ -1,6 +1,6 @@
 ---
 title: SSH Directly into Slurm Job
-date: 2026-01-14T15:00:00-05:00
+date: 2026-11-06T10:00:00-05:00
 category: comp
 tags:
   - devops
@@ -10,9 +10,13 @@ keywords:
   - ssh
 ---
 
-Connect your editor or terminal to the requested resources like a breeze.
+Connect your editor or terminal to the requested Slurm resources like a breeze.
 
 <!-- more -->
+
+> [!UPDATE]
+>
+> 2026-11-06: We have updated the ProxyCommand.
 
 ## Command
 
@@ -22,8 +26,8 @@ Host <bastion>
   User         <user>
   IdentityFile <identity-file>
 
-Host <bastion>-debug
-  ProxyCommand ssh -q <bastion> "bash -l -c 'nc \$(squeue --me --states=R --noheader --format=%%N --name="debug" | head -n 1) 22'"
+Host <bastion>-sleeper
+  ProxyCommand ssh -q <bastion> "bash -l -c 'j=\$(squeue --me --states=R --noheader --format=%%i --name="sleeper" | head -n1); n=\$(scontrol show hostnames \$(squeue -j \$j --noheader --format=%%N) | head -n1); exec srun -u --jobid=\$j --overlap --nodes=1 --ntasks=1 --nodelist=\$n nc \$n 22'"
   User         <user>
   IdentityFile <identity-file>
 
@@ -32,12 +36,9 @@ Host <bastion>-debug
   LogLevel              ERROR
 ```
 
-Add this configuration to your `~/.ssh/config`, and then SSH to your latest job named `debug` with `ssh <bastion>-debug`, or connect
-  your [Visual Studio Code Remote SSH](https://code.visualstudio.com/docs/remote/ssh) or [Zed Remote](https://zed.dev/docs/remote-development)
-  using the host `<bastion>-debug`.
-  
-A benefit of this approach: you don't need to use a fixed node, or copy-paste the node allocated for your job. All nodes running the `debug` job
-  are collapsed into one host.
+Add this configuration to your `~/.ssh/config`, and then SSH to your latest job named `sleeper` with `ssh <bastion>-sleeper`, or connect your [Visual Studio Code Remote SSH](https://code.visualstudio.com/docs/remote/ssh) or [Zed Remote](https://zed.dev/docs/remote-development) using the host `<bastion>-sleeper`.
+
+A benefit of this approach: you don't need to use a fixed node, or copy-paste the node allocated for your job. All nodes running the `sleeper` job are collapsed into one host.
 This also keeps a clean history for your shell and editor workspaces.
 
 ## Explanation
@@ -47,16 +48,32 @@ This also keeps a clean history for your shell and editor workspaces.
 
 ### ProxyCommand
 
-This command creates a remote socket to the debug job. It first connects to the `<bastion>` host. Then, it executes a command to find the compute node running your job:
+This command creates a remote socket to the sleeper job. It first connects to the `<bastion>` host. Then, it executes a command to find the compute node running your job:
 
-1.  `squeue`: Queries the Slurm queue.
-    *   `--me`: Filters for jobs owned by the current user.
-    *   `--states=R`: Selects only running jobs (you can't SSH into a pending job).
-    *   `--name="debug"`: Selects jobs named "debug" (adjust this to match your interactive session name, e.g., `salloc -J debug ...`).
-    *   `--format=%N`: Output only the node name. Note the double percent `%%N` in the config to escape it for SSH.
-    *   `--noheader`: Suppresses the header row.
-2.  `head -n 1`: Takes the first node if the job spans multiple nodes or if there are multiple debug jobs.
-3.  `nc <node> 22`: Uses `netcat` to establish a TCP connection to port 22 (SSH) on the identified compute node.
+- **Query Slurm job ID**: `squeue --me --states=R --noheader --format=%i --name=sleeper | head -n1` 
+  - `squeue` queries Slurm for your (`--me`) currently running (`--states=R`) jobs named `sleeper` (`--name=sleeper`), omits the table header (`--noheader`), and prints
+    only the job ID (`--format=%i`). 
+  - `head -n1` selects the first matching job ID.
+- **Query node hostname**: `scontrol show hostnames $(squeue -j $j --noheader --format=%N) | head -n1`
+  - Inner `squeue` looks up the nodelist (`--format=%N`) for job `$j`. If a job spans multiple nodes, `squeue` returns a compressed host-list expression (e.g., `gpu[01-02]`), which `nc` cannot resolve as a hostname.
+  -  Outer `scontrol show hostnames` expands the host-list expression into one hostname per line, and `head -n1` picks the first node.
+- **Netcat**: `srun -u --jobid=$j --overlap --nodes=1 --ntasks=1 --nodelist=$n nc $n 22`
+  - `-u` (`--unbuffered`) disables `srun`'s default line-buffering of task stdout. SSH binary handshake does not use newlines like interactive texts, with line-buffering the connection will hang indefinitely.
+  - `--jobid=$j --overlap --nodes=1 --ntasks=1 --nodelist=$n` launches an overlapped job sharing resources (CPUs, GPUs, memory) already allocated to the sleeper job. Restricted to 1 task on 1 node.
+  - `nc $n 22` runs a netcat within the `srun` step. The `srun` will relay stdin/stdout between our local `ssh` client and `nc`.
+
+:::details[Older version...]
+Previously we use a coarse version of netcat and the name `debug`:
+
+```sh
+nc $(squeue --me --states=R --noheader --format=%N --name="debug" | head -n 1) 22
+```
+
+This has some bugs:
+
+- `%N` might not be a single node’s hostname. For a multi-node job it can be `gpu[01-05]`.
+- This will normally drop into the latest job on `debug` job’s node. First, the latest job can be another job. Second, this behavior relies on Slurm’s `pam_slurm_adopt` policy.
+:::
 
 ### Host Key Checking
 
@@ -78,7 +95,7 @@ Ensure you have an interactive job running with the matching name (`debug` in th
 And this job should occupy 1 node only (otherwise Slurm might output `node[01-02]` which is not a valid hostname).
 
 ```bash
-salloc --name=debug --time=1:00:00 --node 1 ...
+salloc --name=sleeper --time=1:00:00 --node 1 ...
 ```
 
 Also this assumes your cluster uses node names as hostnames. Otherwise you might need to use `scontrol show hostnames` to resolve it first.
