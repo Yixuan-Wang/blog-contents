@@ -95,4 +95,10 @@ friends:
     link:
       github: "https://github.com/lailai0916"
       homepage: "https://lailai.one"
-      
+
+  - name: NeverBehave
+    avatar: https://cdn.jsdelivr.net/gh/homeofnever/friends@gh-pages/me/avatar.png
+    link:
+      github: "https://github.com/neverbehave"
+      homepage: "https://never.pet"
+      blog: "https://blog.never.pet"  
