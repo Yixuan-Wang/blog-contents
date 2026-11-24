@@ -216,7 +216,7 @@ graph TD;
   C-->D;
 ```
 
-Mermaid 依赖在运行时从 CDN 动态加载。目前试用固定颜色。
+Mermaid 依赖使用 [Pele](https://pele.run/) 实现。
 
 ## 地图
 
@@ -224,25 +224,13 @@ Mermaid 依赖在运行时从 CDN 动态加载。目前试用固定颜色。
 <component
   is="geo"
   lat="39.9935"
-  long="116.303873"
-  tile="osm"
+  lng="116.303873"
 />
-
-<!--
-tile="osm"
-tile="carto"
-tile="tianditu"
--->
 ```
 
-<component is="geo" lat="39.9935" long="116.303873" tile="osm"></component>
+<component is="geo" lat="39.9935" lng="116.303873"></component>
 
-<component is="geo" lat="39.9935" long="116.303873" tile="carto"></component>
-
-<component is="geo" lat="39.9935" long="116.303873" tile="tianditu"></component> 
-
-
-基于 Leaflet 实现的地图。
+基于 MapLibre GL 实现的地图，矢量瓦片来自 OpenFreeMap。
 
 ## 多媒体链接
 
